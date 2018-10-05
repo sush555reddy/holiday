@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'holiday';
+  // holidays: any;
+  // holidayDataEvent(data) {
+  //   this.holidays = data;
+  // }
 }

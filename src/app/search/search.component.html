@@ -1,0 +1,23 @@
+
+<div class="container">
+<form class="form-inline">
+  <!-- <label class="sr-only" for="inlineFormInputName2">Country</label>
+  <input type="text" class="form-control mb-2 mr-sm-2" name="country" id="inlineFormInputName2"[(ngModel)]="data.country" placeholder="Country">
+
+  <label class="sr-only" for="inlineFormInputGroupUsername2">Month</label>
+  <div class="input-group mb-2 mr-sm-2">
+    <input type="month" class="form-control" id="inlineFormInputGroupUsername2" [(ngModel)]="data.Month"placeholder="Month">
+  </div>
+
+  <label class="sr-only" for="inlineFormInputName2">Year</label>
+  <input type="year" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" [(ngModel)]="data.country" placeholder="Year">
+ -->
+
+  <button type="submit" class="btn btn-primary mb-2" (click)="getdata()">Submit</button>
+</form>
+<div *ngIf="holidays && holidays.length">
+<ul *ngFor="let data of holidays">
+  <li>{{data.date.name}}</li>
+</ul>
+</div>
+</div>
